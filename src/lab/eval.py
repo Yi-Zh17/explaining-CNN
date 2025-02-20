@@ -23,12 +23,12 @@ def plot_results(x, r1, r2, index):
     axes[0].imshow(x)
     axes[0].set_axis_off()
 
-    axes[1].imshow(r1, cmap="afmhot")
+    axes[1].imshow(r1, cmap="binary")
     axes[1].set_xticks([])
     axes[1].set_yticks([])
     axes[1].set_xlabel("$z^+$-rule", fontsize=fontsize)
 
-    axes[2].imshow(r2, cmap="afmhot")
+    axes[2].imshow(r2, cmap="binary")
     axes[2].set_xticks([])
     axes[2].set_yticks([])
     axes[2].set_xlabel("$z^+$-rule + relevance filter", fontsize=fontsize)
